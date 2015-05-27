@@ -1,7 +1,6 @@
 omm -ubuntu
 ============
 
-[![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
 
 Simple Ubuntu docker images with SSH access
 
@@ -9,15 +8,6 @@ Simple Ubuntu docker images with SSH access
 Usage
 -----
 
-To create the image `tutum/ubuntu` with one tag per Ubuntu release,
-execute the following commands on the tutum-ubuntu branch:
-
-	docker build -t tutum/ubuntu:latest .
-	docker build -t tutum/ubuntu:lucid lucid/
-	docker build -t tutum/ubuntu:precise precise/
-	docker build -t tutum/ubuntu:trusty trusty/
-	docker build -t tutum/ubuntu:utopic utopic/
-	docker build -t tutum/ubuntu:vivid vivid/
 
 
 Running tutum/ubuntu
