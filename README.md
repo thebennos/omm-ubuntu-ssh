@@ -10,7 +10,7 @@ Usage
 
 
 
-Running tutum/ubuntu
+Running omm-ubuntu-ssh
 --------------------
 
 To run a container from the image you created earlier with the `trusty` tag
