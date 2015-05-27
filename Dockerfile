@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Honglin Feng <hfeng@tutum.co> 
+MAINTAINER Benjamin Wenderoth <b.wenderoth@gmail.com> 
 
 # Install packages
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install openssh-server pwgen
@@ -8,6 +8,10 @@ RUN mkdir -p /var/run/sshd && sed -i "s/UsePrivilegeSeparation.*/UsePrivilegeSep
 ADD set_root_pw.sh /set_root_pw.sh
 ADD run.sh /run.sh
 RUN chmod +x /*.sh
+RUN mkdir -p /var/data/www
+VOLUME ["/var/data/www"]
+CMD ["true"]
+
 
 ENV AUTHORIZED_KEYS **None**
 
