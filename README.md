@@ -1,4 +1,4 @@
-omm -ubuntu
+omm -ubuntu - ssh
 ============
 
 
